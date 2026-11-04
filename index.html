@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff1d9">
+  <meta name="description" content="My Reset — личный журнал, мягкий планер и пространство для маленьких перемен.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="My Reset">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <title>My Reset — Dopamine Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-view="home"><span class="brand-mark">mr<span>✳</span></span><span><strong>my reset</strong><small>your dopamine diary</small></span></a>
+      <div class="sidebar-label">YOUR LITTLE WORLD</div>
+      <nav id="sideNav" class="side-nav">
+        <button class="nav-item active" data-view="home"><span>✳</span> Главная</button>
+        <button class="nav-item" data-view="routine"><span>↗</span> Мой день</button>
+        <button class="nav-item" data-view="habits"><span>✿</span> Привычки</button>
+        <button class="nav-item" data-view="program"><span>◷</span> 6 недель</button>
+        <button class="nav-item" data-view="room"><span>⌂</span> Комната</button>
+        <button class="nav-item" data-view="journal"><span>✎</span> Дневник</button>
+        <button class="nav-item" data-view="life"><span>♡</span> Моя жизнь</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Настройки</button>
+      </nav>
+      <div class="sidebar-note"><span>✳</span><p>Make room for the life you want.</p><small>Маленькие шаги тоже считаются.</small></div>
+      <div class="sidebar-footer">A PERSONAL SPACE · MADE WITH CARE</div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div><div class="eyebrow" id="todayLabel">A PERSONAL SPACE</div><h1 id="pageTitle">Место, где начинается твой день</h1></div><div class="top-actions"><span class="date-pill" id="datePill"></span><button class="icon-button mobile-menu" id="menuToggle" aria-label="Открыть навигацию">☰</button></div></header>
+      <div id="appContent" class="content"></div>
+      <footer class="mobile-nav" id="mobileNav"><button class="active" data-view="home"><span>✳</span>Дом</button><button data-view="routine"><span>↗</span>День</button><button data-view="habits"><span>✿</span>Привычки</button><button data-view="journal"><span>✎</span>Дневник</button><button id="mobileMore" type="button"><span>•••</span>Ещё</button></footer>
+      <div class="more-menu" id="moreMenu"><button data-view="program">◷ Шесть недель</button><button data-view="room">⌂ Комната</button><button data-view="life">♡ Моя жизнь</button><button data-view="settings">⚙ Настройки</button></div>
+    </main>
+  </div>
+  <div id="modalRoot"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="importFile" type="file" accept="application/json,.json" hidden>
+  <script src="script.js"></script>
+</body>
+</html>
